@@ -1,0 +1,14 @@
+version: "3.7"
+services:
+  web:
+    build: .
+    ports:
+      - "9876:9876"
+    volumes:
+      - type: volume
+        source: media
+        target: /app/media
+        volume:
+          nocopy: true
+volumes:
+  media:

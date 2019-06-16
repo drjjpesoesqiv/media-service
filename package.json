@@ -1,0 +1,17 @@
+{
+  "name": "media-service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-busboy": "^7.0.1",
+    "mongodb": "^3.2.7",
+    "mv": "^2.1.1"
+  }
+}

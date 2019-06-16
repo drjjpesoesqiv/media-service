@@ -4,5 +4,6 @@ COPY . .
 RUN npm install
 EXPOSE 9876
 EXPOSE 27017
+ENV NODE_PORT="9876"
 ENV MONGO_HOST="192.168.0.8:27017"
 CMD [ "npm", "start" ]

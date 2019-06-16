@@ -94,7 +94,7 @@ app.post('/upload', (req, res) => {
   }
 });
 
-const port = 9876;
+const port = process.env.NODE_PORT;
 app.listen(port, () => {
   console.log(`listening on port ${port}`)
 });

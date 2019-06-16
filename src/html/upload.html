@@ -1,14 +1,64 @@
 <html>
 <head>
   <title>Upload</title>
-</head>
-<body>
-  <h1>Upload</h1>
+  <style>
+    body {
+      background-color: rebeccapurple;
+      color: gold;
+      font-family: sans-serif;
+      font-size: 14px;
+    }
 
-  <form method="POST" enctype="multipart/form-data">
-    <input type="text" name="mediaTitle"><br />
-    <input type="file" name="mediaFile"><br />
-    <input type="submit">
-  </form>
+    div#container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin: 0px auto;
+      width: 100%;
+      height: 100%;
+    }
+
+    form {
+      background-color: #333;
+      border-radius: 8px;
+      color: #eee;
+      padding: 16px;
+      width: 480px;
+    }
+
+    input[type="text"] {
+      box-shadow: 2px 2px 2px #888 inset;
+    }
+    input[type="text"],input[type="file"] {
+      border: 1px solid lightcoral;
+      border-radius: 8px;
+      margin-bottom: 16px;
+      padding: 8px;
+      width: 100%;
+    }
+    input[type="submit"] {
+      border: 1px solid lightcoral;
+      border-radius: 4px;
+      float: right;
+      text-transform: uppercase;
+    }
+    input[type="text"],input[type="submit"] {
+      background-color: whitesmoke;
+      font-size: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    <h1>Upload</h1>
+
+    <form method="POST" enctype="multipart/form-data">
+      <input type="text" name="mediaTitle" placeholder="title" required><br />
+      <input type="file" name="mediaFile" required><br />
+      <input type="submit">
+    </form>
+  </div>
 </body>
 </html>
